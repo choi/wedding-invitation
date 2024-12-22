@@ -8,6 +8,10 @@
     <meta name="format-detection" content="telephone=no">
     <link rel="icon" type="image/png" href="data:image/png;base64,">
     <title>최인식 ♥ 류진솔 결혼합니다</title>
+    <script src="https://unpkg.com/@supabase/supabase-js"></script>
+    <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=6dd95fdc88f7a7ddde78370842026602"></script>
+    <script src="common.js"></script>
+    <link rel="stylesheet" href="style.css">
     <style>
       @font-face {
         font-family: "SunBatang";
@@ -140,11 +144,13 @@
     <div class="subtitle">초대합니다</div>
 
     <div class="greetings-text">
-      서로가 있기에 눈 뜨는 아침이 행복했습니다.<br />
-      이제 그 행복을 곁에서 함께 하려 합니다.<br />
-      사랑과 믿음으로 하나 되는 자리에<br />
-      귀한 걸음 하시어 축복해 주시면<br />
-      큰 기쁨으로 간직하겠습니다.
+      가장 따뜻한 손을 잡고<br />
+      서로의 길을 밝혀줄 사람이 되어<br />
+      함께 걸어가려 합니다.<br />
+      <br />
+      저희 두 사람의 사랑과 믿음을 약속하는<br />
+      뜻깊은 자리에 귀한 걸음 하시어<br />
+      자리를 빛내 주시면 감사하겠습니다.
     </div>
 
     <img src="images/sub.jpg" />
@@ -188,10 +194,99 @@
     <a href="gallery.html">
       <div class="button">자세히 보기</div>
     </a>
+    
+    <div class="subtitle">오시는 길</div>
+
+    <div id="map"></div>
+    <a href="https://map.kakao.com/?itemId=12448214">
+      <div class="button">카카오맵 바로가기</div>
+    </a>
+
+    <div class="location-info">
+      <div>
+        <div class="location-subtitle">주소</div>
+        서울특별시 종로구 북촌로 57<br />
+      </div>
+
+      <div>
+        <div class="location-subtitle">일반버스</div>
+        
+      </div>
+
+      <div>
+        <div class="location-subtitle">지하철</div>
+        3호선 안국역 2번 출구 (헌법재판소 방향)<br />
+        도보 8분
+      </div>
+
+      <div>
+        <div class="location-subtitle">자가용</div>
+        주차공간이 협소하오니 가급적 대중교통을 이용하여 주시기 바랍니다.<br />
+        성당주차장은 혼주용으로 사용되어 현대계동사옥 (현대엔지니어링) 이용하시고<br />
+        주차권을 받으시면 되겠습니다.
+      </div>
+    </div>
+
+
+    <div class="subtitle">
+      마음 전하실 곳
+    </div>
+
+    <div name="accounts" class="button account-button">
+      신랑측 계좌번호
+    </div>
+    <div class="account-item">
+      <p>
+        하나은행
+        <span class="word">344-910346-10007</span>
+        최인식
+        <a href="https://qr.kakaopay.com/">
+          <img class="kakaopay" src="payment_icon_yellow_large.png" />
+        </a>
+      </p>
+    </div>
+
+    <div name="accounts" class="button account-button">
+      신부측 계좌번호
+    </div>
+    <div class="account-item">
+      <p>
+        기업은행
+        <span class="word">071-091199-01-013</span>
+        류진솔
+        <a href="https://qr.kakaopay.com/">
+          <img class="kakaopay" src="payment_icon_yellow_large.png" />
+        </a>
+      </p>
+      <p>
+        농협은행
+        <span class="word">779-12-081225</span>
+        류윤기
+      </p>
+      <p>
+        농협은행
+        <span class="word">779-02-596400</span>
+        이미아
+      </p>
+    </div>
 
     <div class="subtitle">방명록</div>
-
-    <div id="guestbook">
+    
+    <div class="form">   
+      <input id="name" type="text" maxlength="32" placeholder="이름">
+      <div class="divider"></div>
+      <input id="passwd" type="password" maxlength="32" placeholder="비밀번호">
+      <div class="divider"></div>
+      <textarea id="message" maxlength="300" placeholder="메세지"></textarea>
     </div>
+    <div id="submit-form-button" class="button">축하메시지 남기기</div>
+ 
+
+    <div id="guestbook"></div>
+
+    <a href="guestbook.html">
+      <div id="guestbook-button" class="button">더 보기</div>
+    </a>
   </body>
+  <script src="index.js"></script>
 </html>
