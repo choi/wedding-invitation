@@ -1,7 +1,15 @@
 var map = new naver.maps.Map(document.getElementById('map'), {
   center: new naver.maps.LatLng(37.582004, 126.984770),
-  zoom: 17,
+  zoom: 18,
   zoomControl: true,
+  zoomControlOptions: {
+    position: naver.maps.Position.TOP_RIGHT
+  }
+});
+
+var marker = new naver.maps.Marker({
+  position: new naver.maps.LatLng(37.582004, 126.984770),
+  map: map
 });
 
 getCount().then(({count}) => {
