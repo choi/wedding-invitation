@@ -99,7 +99,7 @@ input::placeholder, textarea::placeholder {
   padding: 4px 20px;
 }
 #map {
-  height: 240px;
+  height: 360px;
   width: 100%;
 }
 .entry {

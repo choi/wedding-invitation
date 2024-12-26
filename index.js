@@ -1,7 +1,9 @@
-var map = new kakao.maps.Map(document.getElementById('map'), {
-  center: new kakao.maps.LatLng(37.582004, 126.984770),
-  level: 4
+var map = new naver.maps.Map(document.getElementById('map'), {
+  center: new naver.maps.LatLng(37.582004, 126.984770),
+  zoom: 17,
+  zoomControl: true,
 });
+
 getCount().then(({count}) => {
   if (count <= MAX_RECENT_COMMENTS) {
     document.getElementById('guestbook-button').style.display = 'none';
