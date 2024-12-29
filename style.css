@@ -7,7 +7,7 @@ html {
   background-color: #333;
 }
 body {
-  background-color: #f5f1ee;
+  background-color: #f8f5f2;
   font: 14px/32px SunBatang;
   height: 100%;
   margin: auto;
@@ -30,7 +30,7 @@ input::placeholder, textarea::placeholder {
   vertical-align: text-bottom;
 }
 .title, .subtitle, .location-subtitle {
-  color: #bf8362;
+  color: #b8726a;
 }
 .title {
   font-size: 20px;
@@ -93,7 +93,7 @@ input::placeholder, textarea::placeholder {
   font-size: 12px;
 }
 .button, .mini-button {
-  background-color: #dab396;
+  background-color: #b8726a;
   color: #fff;
   cursor: pointer;
   padding: 4px 20px;
