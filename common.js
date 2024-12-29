@@ -38,7 +38,7 @@ const submitForm = async () => {
   }
   await insertData({name, passwd, message});
   location.reload();
-
+}
 
 const getDataRecent = async () =>
   await supabase.from(TABLE_ID).select()
