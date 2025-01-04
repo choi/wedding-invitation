@@ -24,6 +24,10 @@ img {
 a {
   text-decoration: none;
 }
+.filler {
+  line-height:1px;
+  color: #f8f5f2;
+}
 input::placeholder, textarea::placeholder {
   font-family: SunBatang;
   line-height: 28px;
@@ -42,11 +46,11 @@ input::placeholder, textarea::placeholder {
 }
 .banner, .entry {
   background-color: #fff;
-  border: 8px solid #fff;
+  border: 8px 8px 0 8px solid #fff;
   box-shadow: 1px 1px 3px rgb(0 0 0 / 7%);
 }
 .banner {
-  margin: 0 14px;
+  margin: 13px 14px 0 14px;
 }
 .banner-text, .family-members {
   font-size: 16px;
