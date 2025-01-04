@@ -4,7 +4,11 @@ var map = new naver.maps.Map(document.getElementById('map'), {
   zoomControl: true,
   zoomControlOptions: {
     position: naver.maps.Position.TOP_RIGHT
-  }
+  },
+  size: {
+    width: 620,
+    height: 480
+  },
 });
 
 var marker = new naver.maps.Marker({

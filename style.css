@@ -38,7 +38,7 @@ input::placeholder, textarea::placeholder {
 }
 .title {
   font-size: 20px;
-  padding: 40px 0 32px;
+  padding: 32px 0 24px;
 }
 .subtitle {
   font-size: 18px;
@@ -52,11 +52,19 @@ input::placeholder, textarea::placeholder {
 .banner {
   margin: 13px 14px 0 14px;
 }
+.banner img {
+  padding: 12px;
+  box-sizing: border-box;
+}
 .banner-text, .family-members {
   font-size: 16px;
 }
 .banner-text {
-  padding: 20px 0;
+  padding: 4px 0 20px;
+}
+.sub {
+  padding: 10px;
+  box-sizing: border-box;
 }
 .greetings-text, .family-members, .location-info {
   margin: 16px 32px 0;
@@ -123,9 +131,10 @@ input::placeholder, textarea::placeholder {
 .rounded-button img {
   display: inline-block;
 }
-#map {
+.map {
   height: 480px;
-  width: 100%;
+  width: 620px;
+  margin: 10px;
 }
 .entry {
   border-bottom: 0;
