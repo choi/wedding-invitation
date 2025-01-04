@@ -35,3 +35,16 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+function copyText(evt) {
+  navigator.clipboard.writeText(evt.currentTarget.getAttribute('text')).then(
+  () => {alert('copied: '+evt.currentTarget.getAttribute('text'))}
+)
+}
+  
+
+var coll = document.getElementsByName('copy');
+for (i=0; i < coll.length; i++) {
+  text = coll[i].getAttribute('text');
+  coll[i].addEventListener("click", copyText, false);
+}

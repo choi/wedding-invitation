@@ -83,9 +83,14 @@ input::placeholder, textarea::placeholder {
   font-size: 16px;
   margin: 16px 0 4px;
 }
-.kakaopay {
-  height: 16px;
+.copy {
+  height: 14px;
   vertical-align: text-top;
+  width: auto;
+}
+.kakaopay {
+  height: 10px;
+  vertical-align: middle;
   width: auto;
 }
 .family-members .relation {
@@ -99,6 +104,20 @@ input::placeholder, textarea::placeholder {
   color: #fff;
   cursor: pointer;
   padding: 4px 20px;
+}
+.rounded-button {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 28px;
+  width: 80px;
+  background-color: #f7f7f7;
+  border-radius: 6px;
+}
+.hidden {
+  visibility: hidden;
+}
+.rounded-button img {
+  display: inline-block;
 }
 #map {
   height: 480px;
@@ -168,6 +187,10 @@ input::placeholder, textarea::placeholder {
   height: 1px;
   width: 100%;
 }
+hr.dashed {
+  border-top: 1px dashed #bbb;
+  width: 72%;
+}
 .account-button {
   margin: 8px 48px 0;
 }
@@ -186,6 +209,16 @@ input::placeholder, textarea::placeholder {
 }
 .active:after {
   content: "\2212";
+}
+.account {
+  display: inline-block;
+  line-height: 28px;
+  text-align: left;
+  width: 200px;
+}
+.buttons {
+  display: inline-block;
+  width: 120px;
 }
 .word {
   white-space: nowrap;
