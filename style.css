@@ -89,6 +89,8 @@ input::placeholder, textarea::placeholder {
   width: auto;
 }
 .family-members .relation {
+  display: inline-block;
+  width: 48px;
   color: #8a857f;
   font-size: 12px;
 }
