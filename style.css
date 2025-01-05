@@ -133,7 +133,6 @@ input::placeholder, textarea::placeholder {
 }
 .map {
   height: 480px;
-  width: 620px;
   margin: 10px;
 }
 .entry {
