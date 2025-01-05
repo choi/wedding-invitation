@@ -165,7 +165,7 @@ input::placeholder, textarea::placeholder {
   white-space: pre-wrap;
 }
 .form, #submit-form-button, #guestbook-button {
-  margin: 0 48px 0;
+  margin: 0 10% 0;
 }
 .form {
   background-color: #fff;
@@ -205,7 +205,8 @@ hr.dashed {
   width: 72%;
 }
 .account-button {
-  margin: 8px 48px 0;
+  margin: 8px 10% 0;
+  max-width: 504px;
 }
 .account-button:after {
   content: '\002B';
@@ -213,8 +214,9 @@ hr.dashed {
   float: right;
 }
 .account-item {
-  margin: 0 48px 0;
-  padding: 0 18px;
+  margin: 0 10% 0;
+  padding: 0 8px;
+  max-width: 504px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
@@ -225,13 +227,13 @@ hr.dashed {
 }
 .account {
   display: inline-block;
-  line-height: 28px;
+  line-height: 32px;
   text-align: left;
-  width: 200px;
+  width: 192px;
 }
 .buttons {
   display: inline-block;
-  width: 120px;
+  width: 80px;
 }
 .word {
   white-space: nowrap;
