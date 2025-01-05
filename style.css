@@ -46,7 +46,7 @@ input::placeholder, textarea::placeholder {
 }
 .banner, .entry {
   background-color: #fff;
-  border: 8px 8px 0 8px solid #fff;
+  border: 8px solid #fff;
   box-shadow: 1px 1px 3px rgb(0 0 0 / 7%);
 }
 .banner {
@@ -140,7 +140,8 @@ input::placeholder, textarea::placeholder {
   border-bottom: 0;
   border-radius: 8px;
   font-size: 13px;
-  margin: 0 48px 16px;
+  margin: 0 10% 16px;
+  padding: 8px;
   position: relative;
 }
 .row {
